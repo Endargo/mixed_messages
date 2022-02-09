@@ -1,4 +1,4 @@
-# Mixed Message v0.4
+# Mixed Message v0.4.1
 
 Main purpose of this project is to get used to development process involving VSCode, Command Line, Git, GitHub, Markdown, Node and basic JavaScript syntax.
 

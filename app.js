@@ -52,7 +52,7 @@ const message = {
         this._paragraph = capitalizeFirstLetter(this._paragraph).trim() + '.';
     },
 
-    generateASCIIImage(chars, width = 10, heigth = 10) {
+    generateASCIIImage(chars, width = 20, heigth = 10) {
         this._asciiImage = '';
 
         for(let i = 0; i < heigth; i++) {
@@ -76,9 +76,9 @@ const message = {
     }
 }
 
-message.generateHeader(Data.getHeaderWords(), 15);
+message.generateHeader(Data.getHeaderWords());
 message.generateParagraph(Data.getParagraphWords());
-message.generateASCIIImage(Data.getImageSymbols(), 20, 20);
+message.generateASCIIImage(Data.getImageSymbols(), 20, 10);
 message.generateSignature(Data.getSignatureNames());
 
 console.log(message.header);
