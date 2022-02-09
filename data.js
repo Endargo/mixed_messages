@@ -1,4 +1,4 @@
-const _headerWords = ['header'];
+const _headerWords = ['this', 'header', 'doesn\'t', 'make', 'any', 'sense', 'at', 'all', 'LMAO'];
 
 const _paragraphWords = ['lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetur', 
 'adipiscing', 'elit', 'sed', 'do', 'eiusmod', 'tempor', 'incididunt', 'ut', 'labore', 

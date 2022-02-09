@@ -6,14 +6,38 @@ function capitalizeFirstLetter(string) {
   }
 
 
-const Message = {
+const message = {
     _header: '',
     _paragraph: '',
     _asciiImage: '',
     _signature: '',
 
-    generateHeader(words, size = 10) {
+    get header() {
+        return this._header;
+    },
+
+    get paragraph() {
+        return this._paragraph;
+    },
+
+    get asciiImage() {
+        return this._asciiImage;
+    },
+
+    get signature() {
+        return this._signature;
+    },
+
+    generateHeader(words) {
         this._header = '';
+        let temp = words;
+
+        while(temp.length > 0) {
+            let i = Math.floor(Math.random() * temp.length);
+            this._header += temp.splice(i, 1) + ' ';
+        }
+
+        this._header = this._header = capitalizeFirstLetter(this._header).trim() + '.';
     },
 
     generateParagraph(words, size = 100) {
@@ -37,8 +61,12 @@ const Message = {
     }
 }
 
+message.generateHeader(Data.getHeaderWords(), 15);
+message.generateParagraph(Data.getParagraphWords());
+message.generateASCIIImage(Data.getImageSymbols(), 20, 20);
+message.generateSignature(Data.getSignatureInitials());
 
-paragraphWords = Data.getParagraphWords()
-//console.log(paragraphWords);
-Message.generateParagraph(paragraphWords);
-console.log(Message._paragraph);
+console.log(message.header);
+console.log(message.paragraph);
+console.log(message.asciiImage);
+console.log(message.signature);
