@@ -1,5 +1,5 @@
 const Data = require('./data.js');
-
+const fs = require('fs');
 
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
@@ -37,7 +37,7 @@ const message = {
             this._header += temp.splice(i, 1) + ' ';
         }
 
-        this._header = this._header = capitalizeFirstLetter(this._header).trim() + '.';
+        this._header = this._header = capitalizeFirstLetter(this._header).trim();
     },
 
     generateParagraph(words, size = 100) {
@@ -85,3 +85,9 @@ console.log(message.header);
 console.log(message.paragraph);
 console.log(message.asciiImage);
 console.log(message.signature);
+
+fs.writeFile('message.md', '# ' + message.header + '\n\n' + message.paragraph + '\n\n```JS\n' + 
+    message.asciiImage + '\n```\n\n***' + message.signature + '***\n', 
+    (error) => {
+        console.log(error);
+    });

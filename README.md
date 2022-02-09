@@ -1,8 +1,8 @@
-# Mixed Message v0.4.1
+# Mixed Message v1.0
 
 Main purpose of this project is to get used to development process involving VSCode, Command Line, Git, GitHub, Markdown, Node and basic JavaScript syntax.
 
-Key part of development process are:
+Key parts of development process are:
 
 - Setting up development environment and creating local repository
 
