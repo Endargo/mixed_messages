@@ -1,4 +1,4 @@
-# Mixed Message v1.0
+# Mixed Message v1.0.1
 
 Main purpose of this project is to get used to development process involving VSCode, Command Line, Git, GitHub, Markdown, Node and basic JavaScript syntax.
 
@@ -12,4 +12,6 @@ Key parts of development process are:
 
 - Further app tuning to provide prettier-looking outputs
 
-Coming up: output examples
+Example of a message:
+
+![Image](example/message_example.jpg)

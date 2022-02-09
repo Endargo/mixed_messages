@@ -81,10 +81,10 @@ message.generateParagraph(Data.getParagraphWords());
 message.generateASCIIImage(Data.getImageSymbols(), 20, 10);
 message.generateSignature(Data.getSignatureNames());
 
-console.log(message.header);
-console.log(message.paragraph);
-console.log(message.asciiImage);
-console.log(message.signature);
+// console.log(message.header);
+// console.log(message.paragraph);
+// console.log(message.asciiImage);
+// console.log(message.signature);
 
 fs.writeFile('message.md', '# ' + message.header + '\n\n' + message.paragraph + '\n\n```JS\n' + 
     message.asciiImage + '\n```\n\n***' + message.signature + '***\n', 
