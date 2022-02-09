@@ -1,4 +1,4 @@
-const _headerWords = [];
+const _headerWords = ['header'];
 
 const _paragraphWords = ['lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetur', 
 'adipiscing', 'elit', 'sed', 'do', 'eiusmod', 'tempor', 'incididunt', 'ut', 'labore', 
@@ -8,18 +8,20 @@ const _imageSymbols = ['|', '/', '\\', '@', '#', '$', '%', '@', '_', '-', '+', '
 
 const _signatureInitials = ['A.'];
 
-export function getHeaderWords() { 
+function getHeaderWords() { 
     return _headerWords; 
 }
 
-export function getParagraphWords() { 
+function getParagraphWords() { 
     return _paragraphWords; 
 }
 
-export function getImageSymbols() {
+function getImageSymbols() {
     return _imageSymbols;
 }
 
-export function getSignatureInitials() {
+function getSignatureInitials() {
     return _signatureInitials;
 }
+
+module.exports = {getHeaderWords, getParagraphWords, getImageSymbols, getSignatureInitials};

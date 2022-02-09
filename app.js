@@ -1,5 +1,11 @@
 const Data = require('./data.js');
 
+
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
+
+
 const Message = {
     _header: '',
     _paragraph: '',
@@ -14,11 +20,14 @@ const Message = {
         this._paragraph = '';
         
         for(let i = 0; i < size; i++) {
-            this._paragraph += words[Math.floor(Math.random * words.length)] + ' ';
-            Math.random > 0.1 ? this._paragraph += ',': undefined;
+            let word = words[Math.floor(Math.random() * words.length)];
+            this._paragraph += word;
+            Math.random() < 0.15 && i !== size - 1 ? this._paragraph += ', ': this._paragraph += ' ';
         }
-        this._paragraph[0].toUpperCase();
-        this._paragraph += '.'
+
+        this._paragraph = capitalizeFirstLetter(this._paragraph);
+        this._paragraph = this._paragraph.trim();
+        this._paragraph += '.';
     },
 
     generateASCIIImage(words, width = 10, heigth = 10) {
@@ -30,6 +39,8 @@ const Message = {
     }
 }
 
-console.log(Data);
-Message.generateParagraph(Data.getParagraphWords());
+
+paragraphWords = Data.getParagraphWords()
+//console.log(paragraphWords);
+Message.generateParagraph(paragraphWords);
 console.log(Message._paragraph);
