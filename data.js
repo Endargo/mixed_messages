@@ -1,10 +1,10 @@
-const _headerWords = ['this', 'header', 'doesn\'t', 'make', 'any', 'sense', 'at', 'all', 'LMAO'];
+const _headerWords = ['this', 'message', 'doesn\'t', 'make', 'any', 'sense', 'at', 'all', 'LMAO'];
 
 const _paragraphWords = ['lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetur', 
 'adipiscing', 'elit', 'sed', 'do', 'eiusmod', 'tempor', 'incididunt', 'ut', 'labore', 
 'et', 'dolore', 'magna', 'aliqua'];
 
-const _imageSymbols = ['|', '/', '\\', '@', '#', '$', '%', '@', '_', '-', '+', '=', ' '];
+const _imageSymbols = ['|', '/', '\\', '@', '#', '$', '%', '@', '_', '-', '+', '='];
 
 const _signatureInitials = ['A.'];
 

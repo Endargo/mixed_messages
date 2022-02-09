@@ -52,7 +52,7 @@ const message = {
         this._paragraph = capitalizeFirstLetter(this._paragraph).trim() + '.';
     },
 
-    generateASCIIImage(words, width = 10, heigth = 10) {
+    generateASCIIImage(chars, width = 10, heigth = 10) {
         this._asciiImage = '';
     },
 
