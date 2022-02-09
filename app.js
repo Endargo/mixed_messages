@@ -64,13 +64,15 @@ const message = {
                 this._asciiImage += char;
             }
             
-            this._asciiImage += '\n';
+            i !== heigth - 1? this._asciiImage += '\n': undefined;
         }
     },
 
-    generateSignature(words) {
+    generateSignature(names) {
         this._signature = '';
-        
+        this._signature += Math.random().toString(36).replace(/[^a-z]+/g, '').toUpperCase().substring(0, 1) + '. ';
+        this._signature += Math.random().toString(36).replace(/[^a-z]+/g, '').toUpperCase().substring(0, 1) + '. ';
+        this._signature += names[Math.floor(Math.random() * names.length)] + ', ' + Math.floor(1000 + Math.random() * 1000);
     }
 }
 
