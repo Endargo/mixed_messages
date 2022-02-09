@@ -25,9 +25,7 @@ const Message = {
             Math.random() < 0.15 && i !== size - 1 ? this._paragraph += ', ': this._paragraph += ' ';
         }
 
-        this._paragraph = capitalizeFirstLetter(this._paragraph);
-        this._paragraph = this._paragraph.trim();
-        this._paragraph += '.';
+        this._paragraph = capitalizeFirstLetter(this._paragraph).trim() + '.';
     },
 
     generateASCIIImage(words, width = 10, heigth = 10) {

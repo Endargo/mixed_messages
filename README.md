@@ -1,6 +1,6 @@
 # Mixed Message v0.1
 
-Main purpose of this project is to get used to development process involving VSCode, JS, Command Line, Git and GitHub, Markdown and basic JavaScript syntax.
+Main purpose of this project is to get used to development process involving VSCode, Command Line, Git, GitHub, Markdown, Node and basic JavaScript syntax.
 
 Key part of development process are:
 
