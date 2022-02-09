@@ -6,7 +6,9 @@ const _paragraphWords = ['lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetur'
 
 const _imageSymbols = ['|', '/', '\\', '@', '#', '$', '%', '@', '_', '-', '+', '='];
 
-const _signatureInitials = ['A.'];
+const _signatureNames = ['Arno', 'Bernie', 'Chandler', 'Dorothee', 'Erich', 'Fisher', 'Garter', 
+'Harryson', 'Ivory', 'Jenkins', 'Keathon', 'Lenny', 'Marco', 'Negreanu', 'Ottre', 'Persy', 'Quinn', 
+'Rachel', 'Sutton', 'Torres', 'Utton', 'Villy', 'Wellington'];
 
 function getHeaderWords() { 
     return _headerWords; 
@@ -20,8 +22,8 @@ function getImageSymbols() {
     return _imageSymbols;
 }
 
-function getSignatureInitials() {
-    return _signatureInitials;
+function getSignatureNames() {
+    return _signatureNames;
 }
 
-module.exports = {getHeaderWords, getParagraphWords, getImageSymbols, getSignatureInitials};
+module.exports = {getHeaderWords, getParagraphWords, getImageSymbols, getSignatureNames};

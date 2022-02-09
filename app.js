@@ -54,17 +54,30 @@ const message = {
 
     generateASCIIImage(chars, width = 10, heigth = 10) {
         this._asciiImage = '';
+
+        for(let i = 0; i < heigth; i++) {
+            for(let j = 0; j < width; j ++) {
+                let char = ' ';
+                if(Math.random() > 0.6) {
+                    char = chars[Math.floor(Math.random() * chars.length)];
+                }
+                this._asciiImage += char;
+            }
+            
+            this._asciiImage += '\n';
+        }
     },
 
     generateSignature(words) {
         this._signature = '';
+        
     }
 }
 
 message.generateHeader(Data.getHeaderWords(), 15);
 message.generateParagraph(Data.getParagraphWords());
 message.generateASCIIImage(Data.getImageSymbols(), 20, 20);
-message.generateSignature(Data.getSignatureInitials());
+message.generateSignature(Data.getSignatureNames());
 
 console.log(message.header);
 console.log(message.paragraph);
