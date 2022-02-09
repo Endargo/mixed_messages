@@ -88,6 +88,4 @@ message.generateSignature(Data.getSignatureNames());
 
 fs.writeFile('message.md', '# ' + message.header + '\n\n' + message.paragraph + '\n\n```JS\n' + 
     message.asciiImage + '\n```\n\n***' + message.signature + '***\n', 
-    (error) => {
-        console.log(error);
-    });
+    (error) => {console.log(error);})
