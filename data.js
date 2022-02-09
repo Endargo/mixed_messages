@@ -8,12 +8,18 @@ const _imageSymbols = ['|', '/', '\\', '@', '#', '$', '%', '@', '_', '-', '+', '
 
 const _signatureInitials = ['A.'];
 
-const getHeaderWords = () => _headerWords;
+export function getHeaderWords() { 
+    return _headerWords; 
+}
 
-const getParagraphWords = () => _paragraphWords;
+export function getParagraphWords() { 
+    return _paragraphWords; 
+}
 
-const getImageSymbols = () => _imageSymbols;
+export function getImageSymbols() {
+    return _imageSymbols;
+}
 
-const getSignatureInitials = () => _signatureInitials;
-
-module.exports;
+export function getSignatureInitials() {
+    return _signatureInitials;
+}
